@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+
+	<RadioGroup
+		android:layout_alignParentBottom="true"
+		android:id="@+id/navigate"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:background="@color/colorPrimary">
+
+		<RadioButton
+            android:checked="true"
+			android:drawableTop="@drawable/selector_tab_home"
+			android:button="@null"
+			android:id="@+id/tab_home"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:textSize="0sp"/>
+
+		<RadioButton
+			android:drawableTop="@drawable/selector_tab_edit"
+			android:button="@null"
+			android:id="@+id/tab_edit"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:textSize="0sp"/>
+
+		<RadioButton
+			android:drawableTop="@drawable/selector_tab_backup"
+			android:button="@null"
+			android:id="@+id/tab_backup"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:textSize="0sp"/>
+
+	</RadioGroup>
+
+</LinearLayout>
+

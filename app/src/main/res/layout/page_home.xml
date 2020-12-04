@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.v7.widget.CardView
+			app:contentPadding="16dp"
+			app:cardCornerRadius="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:layout_marginTop="24dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="欢迎使用\n\n九仙道专属修改器\n\n完美支持九仙道全部版本"
+				android:gravity="center"/>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			app:contentPadding="16dp"
+			app:cardCornerRadius="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:id="@+id/page_home_puzzle"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginTop="24dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:src="@drawable/ic_puzzle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="插件"
+					android:gravity="center"
+					android:layout_marginLeft="8dp"
+					android:textColor="#FF333333"
+					android:textSize="16sp"/>
+
+			</LinearLayout>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			app:contentPadding="16dp"
+			app:cardCornerRadius="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:id="@+id/page_home_setting"
+			android:layout_marginTop="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:src="@drawable/ic_setting"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="设置"
+					android:gravity="center"
+					android:layout_marginLeft="8dp"
+					android:textColor="#FF333333"
+					android:textSize="16sp"/>
+
+			</LinearLayout>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			app:contentPadding="16dp"
+			app:cardCornerRadius="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:id="@+id/page_home_help"
+			android:layout_marginTop="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:src="@drawable/ic_help"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="帮助"
+					android:gravity="center"
+					android:layout_marginLeft="8dp"
+					android:textColor="#FF333333"
+					android:textSize="16sp"/>
+
+			</LinearLayout>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			app:contentPadding="16dp"
+			app:cardCornerRadius="16dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:id="@+id/page_home_infomation"
+			android:layout_marginTop="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:src="@drawable/ic_information"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="关于"
+					android:gravity="center"
+					android:layout_marginLeft="8dp"
+					android:textColor="#FF333333"
+					android:textSize="16sp"/>
+
+			</LinearLayout>
+
+		</android.support.v7.widget.CardView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true">
+
+		<android.support.design.widget.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_play"
+			android:id="@+id/page_home_fab_play"
+			android:layout_margin="16dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
